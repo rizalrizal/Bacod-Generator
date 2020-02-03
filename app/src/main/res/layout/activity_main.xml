@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    android:padding="50dp"
+    tools:context = ".MainActivity"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BACOD"
+        android:id="@+id/txtHeader"
+        android:textColor="#fff"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Bacod Generator"
+        android:layout_below="@id/txtHeader"
+        android:textAllCaps="false"
+        android:id="@+id/txtTagLine"
+        android:textColor="#fff"
+        android:textSize="32sp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <EditText
+        android:layout_below="@id/txtTagLine"
+        android:layout_width="match_parent"
+        android:id="@+id/edtSumber"
+        android:padding="5dip"
+        android:background="@drawable/round_edt"
+        android:layout_height="wrap_content"
+        android:lines="8"
+        android:minLines="6"
+        android:gravity="top|left"
+        android:layout_marginBottom="16dp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearbtn"
+    android:layout_marginBottom="16dp"
+    android:layout_below="@id/edtSumber"
+    android:orientation="horizontal">
+    <Button
+        android:background="@drawable/btn_login"
+        android:layout_width="0dp"
+        android:layout_weight=".20"
+        android:layout_marginRight="5dp"
+        android:layout_height="40dp"
+        android:id="@+id/hilih"
+        android:textAllCaps="false"
+        android:text="hilih"
+        android:textSize="22sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:background="@drawable/btn_login"
+        android:layout_width="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight=".20"
+        android:layout_height="40dp"
+        android:id="@+id/byksw"
+        android:textAllCaps="false"
+        android:text="byksw"
+        android:textSize="22sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:background="@drawable/btn_login"
+        android:layout_width="0dp"
+        android:layout_weight=".20"
+        android:layout_marginRight="5dp"
+        android:layout_height="40dp"
+        android:id="@+id/alay"
+        android:textAllCaps="false"
+        android:text="4l4y"
+        android:textSize="22sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:background="@drawable/btn_login"
+        android:layout_width="0dp"
+        android:layout_weight=".20"
+        android:layout_height="40dp"
+        android:id="@+id/autis"
+        android:textAllCaps="false"
+        android:text="aUtIs"
+        android:textSize="22sp"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
+
+    <EditText
+        android:layout_below="@id/linearbtn"
+        android:layout_width="match_parent"
+        android:id="@+id/edtHasil"
+        android:layout_marginBottom="16dp"
+        android:padding="5dip"
+        android:background="@drawable/round_edt"
+        android:layout_height="wrap_content"
+        android:lines="8"
+        android:minLines="6"
+        android:gravity="top|left" />
+
+    <Button
+        android:layout_below="@id/edtHasil"
+        android:background="@drawable/btn_login"
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_weight=".20"
+        android:layout_height="40dp"
+        android:id="@+id/copyhasil"
+        android:textAllCaps="false"
+        android:text="copy hasil"
+        android:textSize="22sp"
+        android:textColor="#ffffff"/>
+
+
+</RelativeLayout>
